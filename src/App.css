@@ -1,38 +1,133 @@
+
+
 .App {
   text-align: center;
+  /* padding-top: 10%; */
+  /* padding-top: 10%; */
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile{
+  
+  width: 100%;
+
+  border-radius: 25px;
+
+  background-color: aliceblue;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profile p img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.profile p b{
+  color: green;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.profile .locANDdate{
   display: flex;
-  flex-direction: column;
+  padding-left: 35%;
+  padding-right: 35%;
+  
+}
+
+.profile .locANDdate .loc{
+
+  margin-right: auto;
+}
+
+.profile .locANDdate .dte{
+  margin-left: auto;
+}
+
+.my-cards{
+  display: flex;
+  padding-left: 35%;
+  padding-right: 35%;
+  
+}
+
+
+.my-cards .card{
+
+  margin-right: auto;
+  margin-left: auto;
+  /* border-style:solid; */
+  border-radius: 30px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+  
+
+}
+
+.mainComponent{
+  padding-top: 10%;
+  height: 70%;
+  padding-left: 20%;
+  padding-right: 20%;
+  
+}
+
+/* .homepageDetails{
+
+  background-color: aqua;
+  align-items: center;
+  
+
+} */
+
+.mainComponent Button a{
+  
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+
+  .my-cards{
+    
+    flex-direction: column;
+    
+  }
+
+  
+
+  .locANDdate{
+    flex-direction: column;
+  }
+
+}
+
+a{
+  text-decoration: none;
+  color: green;
+}
+
+.repAndMore{
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+
+/* styling the Repos.js file */
+
+.landAndImage{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.landAndImage img{
+
+  width: 10px;
+  height: 10px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+

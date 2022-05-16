@@ -1,24 +1,40 @@
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react'
+import {BrowserRouter, Link, Route, Routes} from 'react-router-dom'
 import './App.css';
+import MainComponent from './components/MainComponent';
+import ProfileDataComponente from './components/ProfileDataComponente';
+
+import {ContextProvider} from '../src/context/AppContext';
+import Repos from './components/Repos'
+
+
 
 function App() {
+  // const [user, setUser] = useState(['Ronnie'])
+  //const [repo, setRepos] = useState(20)
+    // console.log(user)
+
+    
+
   return (
+    <ContextProvider>
+    <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/' element={<MainComponent/>}/>
+        <Route path='/profile' element={<ProfileDataComponente />}/>
+        <Route path='/repos' element={<Repos/>}/>
+      </Routes>
+      
+
+      
     </div>
+
+    
+    
+    </BrowserRouter>
+
+    </ContextProvider>
   );
 }
 
