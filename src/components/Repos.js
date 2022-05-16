@@ -31,7 +31,7 @@ function Repos() {
 
         })
 
-    },[])
+    })
   return (
       <>
           <div className="card">
