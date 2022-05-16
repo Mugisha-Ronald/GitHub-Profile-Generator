@@ -12,6 +12,9 @@ function Repo({repo}) {
 
     
   return (
+    <> 
+    
+       
     
     <div className="github-cards">
       <a className='github-card' href='#'>
@@ -25,7 +28,8 @@ function Repo({repo}) {
         </span>
 
         <span className="github-card__meta">
-         Rating {repo.stargazers_count} 
+        <i class="fa fa-star" aria-hidden="true"></i>
+         {repo.stargazers_count} 
           <span data-stars>
             
           </span>
@@ -34,7 +38,7 @@ function Repo({repo}) {
         <span className="github-card__meta">
           <i className="fa fa-code-fork" aria-hidden="true"></i>
           <span data-forks>
-          Forked {repo.forks_count}
+          {repo.forks_count}
           </span>
         </span>
 
@@ -44,6 +48,8 @@ function Repo({repo}) {
 
       
     </div>
+    </>
+
   )
 }
 
