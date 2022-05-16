@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react'
-import {BrowserRouter, Link, Route, Routes} from 'react-router-dom'
+import React from 'react'
+import {BrowserRouter,  Route, Routes} from 'react-router-dom'
 import './App.css';
 import MainComponent from './components/MainComponent';
 import ProfileDataComponente from './components/ProfileDataComponente';

@@ -40,7 +40,7 @@ function ProfileDataComponente() {
 
         })
 
-    },[])
+    })
 
     const formatDate=(date)=>{
         const d = new Date(date);
@@ -61,7 +61,7 @@ function ProfileDataComponente() {
         </div>
         
 
-        <p> <img src={context.data.image} alt='Github-profile-image'/> </p>
+        <p> <img alt='profileImage' src={context.data.image} /> </p>
         <p><b>{context.username}</b></p>
 
         <div className='locANDdate'>

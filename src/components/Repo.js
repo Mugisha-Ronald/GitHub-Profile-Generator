@@ -1,12 +1,15 @@
-import React from 'react'
 
+import React, {useContext} from 'react'
 
+import {AppContext} from '../context/AppContext'
 
 import '../Repo.css';
 
 
 
 function Repo({repo}) {
+
+  const context = useContext(AppContext)
 
     
 
@@ -17,7 +20,7 @@ function Repo({repo}) {
        
     
     <div className="github-cards">
-      <a className='github-card' href='#'>
+      <a className='github-card' href={`https://github.com/${context.username}/${repo.name}`}>
       {/* <FontAwesomeIcon icon={faCoffee} /> */}
       <h3>{repo.name}</h3>
       
